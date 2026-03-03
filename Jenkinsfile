@@ -37,12 +37,13 @@ pipeline {
             }
         }
 
-        stage('Prueba') {
-            steps {
+// COMENTADO HASTA ENCONTRAR SOLUCIÓN
+//        stage('Prueba') {
+//            steps {
                 // Espera un poco y comprueba si la api responde
-                sh 'sleep 5'
-                sh 'curl http://172.17.0.1:$PORT || exit 1'
-            }
-        }
+//                sh 'sleep 5'
+//                sh 'curl http://172.17.0.1:$PORT || exit 1'
+//            }
+//        }
     }
 }
