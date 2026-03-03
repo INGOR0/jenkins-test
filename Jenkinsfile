@@ -41,7 +41,7 @@ pipeline {
             steps {
                 // Espera un poco y comprueba si la api responde
                 sh 'sleep 5'
-                sh 'curl http://localhost:$PORT || exit 1'
+                sh 'curl http://172.17.0.1:$PORT || exit 1'
             }
         }
     }
